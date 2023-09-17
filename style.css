@@ -1,0 +1,99 @@
+.nav {
+  width: 90%;
+  border-radius: 15px;
+  margin: 10px;
+  margin-left: 5%;
+}
+
+.div {
+  display: flex;
+  background: linear-gradient(0deg, #a47cf3, #683fea);
+  justify-content: space-between;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.head {
+  margin-left: 20px;
+  color: white;
+}
+
+.bar {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+li {
+  margin: 10px;
+  border: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cbff6c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+li a {
+  text-decoration: none;
+  color: #4f0101;
+}
+
+li a:hover {
+  color: white;
+}
+li:hover {
+  background: linear-gradient(0deg, #a47cf3, #683fea);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #9917ff;
+  transform: translateY(-2px);
+}
+
+.img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.menu {
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  margin-left: 590px;
+  margin-top: 99px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.in:hover{
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 30px 15px rgb(206, 179, 29);
+}
+
+@media (max-width: 562px) {
+  .nav {
+    width: auto;
+  }
+  .div{
+    width: auto;
+  }
+  .menu{
+    width: fit-content;
+    text-align: center;
+    align-items: baseline;
+  }
+  .img {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
